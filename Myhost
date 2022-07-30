@@ -1,2 +1,12 @@
+
+[myservers]
 172.31.84.243
 172.31.90.157
+
+
+
+
+[myservers:vars]
+myvariable= value
+mywebpackonubutun= apache2
+mywebpackonredhat= httpd
