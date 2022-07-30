@@ -5,8 +5,3 @@
 
 
 
-
-[myservers:vars]
-myvariable= value
-mywebpackonubutun= apache2
-mywebpackonredhat= httpd
