@@ -8,5 +8,5 @@
 
   - name: want to see first task result
     debug:
-     mgs: "{{myfirsttaskresult}}"
+     msg: "{{myfirsttaskresult}}"
   
