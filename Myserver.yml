@@ -2,15 +2,15 @@
 - hosts: all
   become: yes
   tasks:
-  - name:  i want to install webserver 
+  - name:  i want to install webserver on ubutu
     apt:
      name: apache2
      state: present
     when: ansible_os_family == "Debian"
 
-  - name: i want to install webserver on redhat
+  - name: i want to install webserver on Redhat
     yum:
      name: httpd
      state: present
-    when: ansible_os_family =="redhat"
+    when: ansible_os_family =="Redhat"
   
