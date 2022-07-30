@@ -1,0 +1,12 @@
+---
+- hosts: 172.31.84.243
+  become: yes
+  tasks:
+  - name: want to excute multiple tasks
+    apt:
+     name: "{{ item }}"
+     state: present
+    loop:
+     - git
+     - tree
+     - wget
