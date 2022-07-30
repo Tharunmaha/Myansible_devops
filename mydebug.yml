@@ -4,4 +4,9 @@
   tasks:
   - name: to excute linux commands
     command: hostname -f
+    register: myfirsttaskresult
+
+  - name: want to see first task result
+    debug:
+     mgs: "{{myfirsttaskresult}}"
   
