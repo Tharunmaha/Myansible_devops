@@ -1,0 +1,17 @@
+---
+- name: want to copy tomcat file to node
+  template: 
+   src: templates/mytomuser.j2
+   dest: /opt/tomcat/conf/tomcat-users.xml
+
+
+- name: want to copy tomcat context into nodes
+  templates:
+   src: templates/mytomcontext.j2
+   dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+
+- name: want to copy tomcat host context into nodes
+  templates:
+   src: templates/mytomhostcontext.j2
+   dest: /opt/tomcat/webapps/manager/META-INF/context.xml
